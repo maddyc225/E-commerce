@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+body{
+    width: 100%;
+}
+h1{
+    font-size:30px;
+    line-height:40px ;
+}
+h2{
+    
+    text-align: center;
+    font-size:30px;
+    line-height:50px ;
+}
+h4{
+    font-size:15px;
+   
+}
+h6{
+    font-size:12px;
+    font-weight:700;
+}
+p{
+    color: grey;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+  margin: 40px 0;
+}
+.logo{
+    width: 150px;
+}
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: rgb(250, 150, 150);
+    box-shadow: 0px 5px 15px rgb(198, 191, 191);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#nav-bar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-bar li{
+    list-style: none;
+    padding: 0 20px;
+    text-decoration: none;
+    position: relative;
+}
+#nav-bar li a{
+    text-decoration: none;
+    color: rgb(33, 30, 30);
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+#nav-bar li a:hover,
+#nav-bar li a.active{
+  color:rgb(89, 148, 148);
+}
+#nav-bar li a.active::after,
+#nav-bar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(89, 148, 148);
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+}
+#hero{
+
+    background-repeat: no-repeat;
+    background-position: top 25% right ;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+#red{
+    color:rgb(43, 109, 43)
+}
+.shoping-offer{
+   width: 500px;
+   margin: 30px;
+
+}
+.text{
+    margin: 60px ;
+    padding:30px ;
+
+}
+.button1{
+    margin: 10px;
+    padding: 5px;
+    height: 30px;
+}
+.cards{
+    padding: 40px;
+    display:flex ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card-item{
+   height: 170px;
+   box-shadow: 1px 1px 3px black;
+   border: 1px solid #cce7d0;
+}
+.cards img{
+    width:170px;
+    height: 120px;
+}
+
+.cards h6{
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.featured h2,h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(42, 32, 32);
+}
+.Categories-heading{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    margin: 20px;
+    width: 350px;
+    height: 1px;
+    background-color: rgb(105, 87, 240);
+}
+.pro-container{
+    padding: 0 100px ;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.pro-container .pro{
+    min-height: 250px;
+    padding: 10px 12px;
+    border:1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    position: relative;
+}
+ /* .pro-container :hover{
+    box-shadow:5px 5px 10px grey;
+} */
+.pro-container .pro img{
+    width: 200px;
+    border-radius: 15px;
+}
+.pro-container .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+.pro-container .pro .des span{
+    color: grey;
+    font-size: 15px;
+    font-weight: 500;
+}
+.pro-container .pro .des h5{
+    padding-top: 7px;
+    font-size: 15px;   
+}
+.pro-container .pro .des i{
+    color: rgb(243,181,25);
+    font-size: 15px;
+
+}
+.pro-container .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178
+    
+}
+.pro-container .pro  a  {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #088178;
+  border: 2px  solid #cce7d0;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+.pro-container .pro  a i{
+    position:relative;
+    left:8px;
+}
+.banner{
+    padding: 100px;
+    text-align: start;
+    color: beige;
+    background-image:url(./images/banner.webp);
+    background-size: cover ;
+    
+}
+.banner h2,button{
+    text-align: start;
+    padding: 10px;
+}
+#sign-in{
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./images/sign-up.jpg);
+    background-size: cover;
+}
+
+#sign-in  span{
+    color: rgb(25, 210, 22);
+
+}
+#sign-in button{
+    padding: 5px;
+}
+.search{
+    color: rgb(34, 30, 22);
+}
+#search{
+ width: 300px;
+ height: 30px;
+
+}
+footer{
+    padding: 50px;
+    margin-top: 50px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.col i{
+    color:rgb(31, 31, 107)
+}
+.col h4{
+    padding-top:15px;
+}
+.col p{
+    color: black;
+    font-size: small;
+    line-height: 2px;
+
+} 
+#App{
+    width: 300px;
+}
+.col #payment{
+    width:200px;    
+}
