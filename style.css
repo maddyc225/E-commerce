@@ -169,9 +169,10 @@ p{
     margin: 15px 0;
     position: relative;
 }
- /* .pro-container :hover{
+ .pro-container .pro:hover{
+    /* border:1px solid #080b09; */
     box-shadow:5px 5px 10px grey;
-} */
+}
 .pro-container .pro img{
     width: 200px;
     border-radius: 15px;
