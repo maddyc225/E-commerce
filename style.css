@@ -279,3 +279,12 @@ footer{
 .col #payment{
     width:200px;    
 }
+
+@media (max-width:799)
+{
+  #hero{
+   width: 100vw;
+
+  }
+}
+

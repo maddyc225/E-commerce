@@ -1,2 +1,1 @@
-var s=InputDeviceInfo();
-console.log(s);
+console.log(3>2>1);
